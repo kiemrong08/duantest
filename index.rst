@@ -8,7 +8,7 @@ Tuyệt vời đây là test Docs
    :maxdepth: 2
 
    style-guide
-   contribute/index
+   tuyetvoiqua/index
 
 
 * :ref:`thuhai`
