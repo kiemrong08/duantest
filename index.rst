@@ -7,8 +7,5 @@ Tuyệt vời đây là test Docs
 .. toctree::
    :maxdepth: 2
 
-   style-guide
+   thuhai
    tuyetvoiqua/index
-
-
-* :ref:`thuhai`
