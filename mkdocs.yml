@@ -1,5 +1,8 @@
 site_name: NguyenTienQuan
 pages:
     - Home: index.md
+    - User Guide:
+      - 'Writing your docs': '1.md'
+      - 'Styling your docs': '2.md'
     - About: about.md
 theme: readthedocs
