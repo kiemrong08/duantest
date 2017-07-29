@@ -3,5 +3,5 @@
    :maxdepth: 2
 
    1
-   tuyetvoiqua/index
+   tuyetvoiqua/Chuong3
    Chapter3
