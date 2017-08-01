@@ -1,35 +1,3 @@
 ============
 Chương 1
 ============
-
-Connect to a Database
-=====================
-
-Before we can start we have to import the client::
-
-    >>> from crate import client
-
-The client provides a ``connect()`` function which is used to establish a
-connection, the first argument is the url of the server to connect to::
-
-    >>> connection = client.connect(crate_host)
-
-CrateDB is a clustered database providing high availability through
-replication. In order for clients to make use of this property it is
-recommended to specify all hosts of the cluster. This way if a server does not
-respond, the request is automatically routed to the next server::
-
-    >>> invalid_host = 'http://not_responding_host:4200'
-    >>> connection = client.connect([invalid_host, crate_host])
-
-If no ``servers`` are given, the default one ``http://127.0.0.1:4200`` is used::
-
-    >>> connection = client.connect()
-    >>> connection.client._active_servers
-    ['http://127.0.0.1:4200']
-
-
-If the option ``error_trace`` is set to ``True``, the client will print a whole traceback
-if a server error occurs::
-
-    >>> connection = client.connect([crate_host], error_trace=True)
