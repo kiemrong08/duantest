@@ -1,0 +1,5 @@
+site_name: Một số ghi ghép nhanh
+pages:
+    - Chương 1: Chapter1.md
+    - Chương 2: Chapter2.md
+theme: readthedocs
